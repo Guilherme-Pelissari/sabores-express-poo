@@ -1,23 +1,18 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.bebida import Bebida
+from modelos.cardapio.prato import Prato
 
-# Criação de instâncias da classe Restaurante
-restaurante_praca = Restaurante('praça', 'gourmet')
-restaurante_mexicano = Restaurante('Mexican food', 'Mexicana')
-restaurante_japones = Restaurante('Japa', 'Japonesa')
 
-# Exemplo de uso do método receber_avaliacao para o restaurante_praca
-restaurante_praca.receber_avaliacao('Gui', 10)
-restaurante_praca.receber_avaliacao('camila', 5) 
-restaurante_praca.receber_avaliacao('felipe', 7) 
+restaurante_praca = Restaurante('praça', 'Gourmet')
 
-# Exemplo de uso do método alternar_estado para o restaurante_mexicano
-restaurante_mexicano.alternar_estado()
+bebida_suco = Bebida('Dell valle',5.00,'grande')
+prato_pf = Prato('Parmegiana',30.00,'Parmegiana de frango com arroz')
+
+
 
 def main():
-    """
-    Função principal que executa a listagem dos restaurantes.
-    """
-    Restaurante.listar_restaurantes()
+    print(bebida_suco)
+    print(prato_pf)
 
 # Bloco principal para executar o código
 if __name__ == '__main__':
